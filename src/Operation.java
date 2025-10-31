@@ -7,7 +7,7 @@ class Operation {
 		return nb1 + nb2;
 	}
 	
-	public static int substract(int nb1, int nb2) {
+	public static int subtract(int nb1, int nb2) {
 		return nb1 - nb2;
 	}
 	
@@ -28,7 +28,7 @@ class Operation {
 	public static void main(String[] args) {
 		
 		System.out.println(addition(5,2));
-		System.out.println(substract(5,2));
+		System.out.println(subtract(5,2));
 		System.out.println(multiplication(5,2));
 		System.out.println(division(3,0));
 
