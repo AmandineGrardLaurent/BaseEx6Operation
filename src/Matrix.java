@@ -61,6 +61,26 @@ class Matrix{
 	
 	
 	/**
+     * Affiche la multiplication d'une matrice par un scalaire et le résultat dans la console.
+     * 
+     * @param m1 la matrice à multiplier
+     * @param number le scalaire (nombre entier) utilisé pour la multiplication
+     */
+	public static void displayMulScalMatrixOperation(int [][] m1, int number) {
+		
+		System.out.println(number);
+		System.out.println("*");
+		displayMatrix(m1);
+		
+		System.out.println("=");
+		// Affiche la matrice issue du résultat
+		displayMatrix(Operation.mulScalMatrix(m1, number));
+		System.out.println("-------------");
+		
+	}
+	
+	
+	/**
      * Affiche une matrice dans la console sous forme de tableau.
      * @param matrice : matrice à afficher
      */
@@ -126,6 +146,8 @@ class Matrix{
 		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "addition"), "+");
 		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "subtract"), "-");
 		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "multiplication"), "*");
+
+		displayMulScalMatrixOperation(m1, 3);
 		
 	}
 }
