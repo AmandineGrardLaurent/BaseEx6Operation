@@ -3,19 +3,19 @@ class Operation {
 	
 	// 6.1 -----------------------------------------------------------------------------
 	
-	public static double addition(double nb1, double nb2) {
+	public static int addition(int nb1, int nb2) {
 		return nb1 + nb2;
 	}
 	
-	public static double substract(double nb1, double nb2) {
+	public static int substract(int nb1, int nb2) {
 		return nb1 - nb2;
 	}
 	
-	public static double multiplication(double nb1, double nb2) {
+	public static int multiplication(int nb1, int nb2) {
 		return nb1 * nb2;
 	}
 	
-	public static double division(double nb1, double nb2) {
+	public static int division(int nb1, int nb2) {
 		if (nb2 == 0) {
 			return 0;
 		}
