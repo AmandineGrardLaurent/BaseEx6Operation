@@ -10,7 +10,8 @@ class Triangle {
 	}
 	
 	public static void triangle(int nbStars) {
-		int positionTriangle = nbStars/2;
+		
+		int positionTriangle = nbStars/2 + 1;
 		for(int i = 1; i <= nbStars; i+=2) {
 			
 			repeat(positionTriangle-=1," ");

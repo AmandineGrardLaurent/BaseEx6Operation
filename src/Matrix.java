@@ -40,9 +40,6 @@ class Matrix{
 						case "multiplication":
 							matrixResult[i][j] = Operation.multiplication(matrix1[i][j], matrix2[i][j]);
 							break;
-						case "division":
-							matrixResult[i][j] = Operation.division(matrix1[i][j], matrix2[i][j]);
-							break;
 						default:
 							return null;
 					}	
@@ -56,7 +53,7 @@ class Matrix{
 			// Si les dimensions ne correspondent pas, on retourne null
 			return null;
 		}
-		
+	
 	}
 	
 	
@@ -130,24 +127,24 @@ class Matrix{
 	// main----------------------------------------------------------------------------
 	
 	public static void main(String[] args) {
-		int [][] m1 = {
+		int [][] matrix1 = {
 				{10, 11, 12},
-		 		{4, 5, 6},
+		 		//{4, 5, 6},
 		 		{7, 8, 9}
 				};
 		
-		int [][] m2 = {
+		int [][] matrix2 = {
 		 		{1, 2, 3},
 		 		{7, 8, 9},
 		 		{4, 5, 6}
 			};		
 		
 		
-		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "addition"), "+");
-		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "subtract"), "-");
-		displayMatrixOperation(m1, m2, applyMatrixOperation(m1, m2, "multiplication"), "*");
+		displayMatrixOperation(matrix1, matrix2, applyMatrixOperation(matrix1, matrix2, "addition"), "+");
+		displayMatrixOperation(matrix1, matrix2, applyMatrixOperation(matrix1, matrix2, "subtract"), "-");
+		displayMatrixOperation(matrix1, matrix2, applyMatrixOperation(matrix1, matrix2, "multiplication"), "*");
 
-		displayMulScalMatrixOperation(m1, 3);
+		displayMulScalMatrixOperation(matrix1, 3);
 		
 	}
 }

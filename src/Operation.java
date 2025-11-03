@@ -15,7 +15,7 @@ class Operation {
 		return nb1 * nb2;
 	}
 	
-	public static int division(int nb1, int nb2) {
+	public static double division(int nb1, int nb2) {
 		if (nb2 == 0) {
 			return 0;
 		}
@@ -39,6 +39,7 @@ class Operation {
 		}
 		return matrixResult;
 	}
+	
 	
 	// main----------------------------------------------------------------------------
 	
